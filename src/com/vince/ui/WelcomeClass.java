@@ -50,6 +50,10 @@ public class WelcomeClass extends BaseClass {
 
         }
 
+        HomeClass homeClass = new HomeClass();
+        homeClass.show();
+
+
     }
 
 }
