@@ -1,13 +1,19 @@
 package com.vince.ui;
 
 import com.vince.bean.Clothes;
+import com.vince.bean.OrderItem;
 import com.vince.service.ClothesService;
+import com.vince.service.OrderService;
 import com.vince.service.impl.ClothesServiceImpl;
+import com.vince.service.impl.OrderServiceImpl;
 import com.vince.utils.ConsoleTable;
 
 import java.util.List;
 
 public class HomeClass extends BaseClass {
+
+    private OrderService orderService = new OrderServiceImpl() ;
+
 
     public void  show(){
         showProduct();
@@ -40,6 +46,21 @@ public class HomeClass extends BaseClass {
     }
 
     private void byProducts() {
+        //生成订单
+        boolean flag = true;
+        while(flag){
+            println(getString("product.input.id"));
+            String id = input.nextLine();
+            println(getString("product.input.shoppingNum"));
+            String shoppingNum = input.nextLine();
+
+            //生成订单明细
+            OrderItem orderItem = new OrderItem();
+            orderItem.setShooppingNum(Integer.parseInt(shoppingNum));//商品金额
+
+
+        }
+
     }
 
     private void findList() {

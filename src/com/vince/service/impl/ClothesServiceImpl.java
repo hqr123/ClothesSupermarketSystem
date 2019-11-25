@@ -15,4 +15,9 @@ public  class ClothesServiceImpl implements ClothesService{
         List<Clothes> clothes = ProductsXMLUtils.parserProductFormXml();
         return clothes;
     }
+
+    @Override
+    public Clothes findById(int cid) throws BusinessException {
+        return null;
+    }
 }
