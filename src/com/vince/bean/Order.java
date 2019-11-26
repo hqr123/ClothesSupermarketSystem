@@ -1,6 +1,7 @@
 package com.vince.bean;
 
 import com.vince.utils.OrderStatusType;
+import org.xmlpull.v1.builder.xpath.jaxen.function.SumFunction;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -72,5 +73,9 @@ public class Order implements Serializable {
     }
 
     public Order() {
+    }
+
+    public float getSum() {
+        return sum;
     }
 }
