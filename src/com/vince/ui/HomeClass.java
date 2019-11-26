@@ -70,7 +70,7 @@ public class HomeClass extends BaseClass {
     private void byProducts() throws BusinessException {
         //生成订单
         boolean flag = true;
-        int count = 0;
+        int count = 1;
         float sum = 0.0f;//订单的总金额
         Order order = new Order();
         while(flag){
@@ -162,6 +162,15 @@ public class HomeClass extends BaseClass {
     }
 
     private void findOrderById() {
+        println(getString("product.order.input.oid"));
+        String oid = input.nextLine();
+        Order order = orderService.findById(Integer.parseInt(oid));
+        if(order!=null){
+            showOrder(order);
+        }else {
+            println(getString("product.order.error"));
+        }
+        menu();
     }
 
     private void showProduct() {
