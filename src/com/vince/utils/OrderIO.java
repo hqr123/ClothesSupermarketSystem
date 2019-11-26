@@ -20,7 +20,7 @@ public class OrderIO {
         return orders;
     }
 
-    public void findByOrderId(int orderId) throws BusinessException{
+    public Order findByOrderId(int orderId) throws BusinessException{
         Order order = null;
         int oid;
         for(Order o : orders){
@@ -30,6 +30,7 @@ public class OrderIO {
                 break;
             }
         }
+        return order;
     }
 
     public boolean writeOrders(){
