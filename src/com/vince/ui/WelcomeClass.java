@@ -44,7 +44,7 @@ public class WelcomeClass extends BaseClass {
                     }
                     break;
                 default:
-                    println(getString("input.error"));
+                    println(getString("reg.error"));
                     break;
             }
 
