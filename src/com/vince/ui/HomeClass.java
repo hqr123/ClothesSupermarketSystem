@@ -51,6 +51,7 @@ public class HomeClass extends BaseClass {
                     break;
                 case "4":  //4、显示商品
                     show();
+                    flag = false;
                     break;
                 case "0":  //0、退出
                     flag = false;

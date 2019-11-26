@@ -45,7 +45,7 @@ public class ProductsXMLUtils {
                     new FileOutputStream("products.xml"));
 
             //单独把头写进去
-            outputStream.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>".getBytes());
+            outputStream.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>".getBytes());
             xStream.toXML(products,outputStream);
             outputStream.close();
 
