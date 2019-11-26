@@ -1,7 +1,6 @@
 package com.vince.service.impl;
 
 import com.vince.bean.Order;
-import com.vince.bean.OrderItem;
 import com.vince.service.OrderService;
 import com.vince.utils.BusinessException;
 import com.vince.utils.OrderIO;

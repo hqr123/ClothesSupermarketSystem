@@ -73,6 +73,7 @@ public class HomeClass extends BaseClass {
         int count = 1;
         float sum = 0.0f;//订单的总金额
         Order order = new Order();
+
         while(flag){
 
             //1、接收用户输入
@@ -80,6 +81,7 @@ public class HomeClass extends BaseClass {
             String id = input.nextLine();
             println(getString("product.input.shoppingNum"));
             String shoppingNum = input.nextLine();
+
             OrderItem orderItem = new OrderItem();
             Clothes clothes = clothesService.findById(id);
 
@@ -92,10 +94,15 @@ public class HomeClass extends BaseClass {
             //3、一条生成订单编号
             clothes.setNum(clothes.getNum()-num); //减去库存
             orderItem.setClothes(clothes);  //商品
-            orderItem.setShooppingNum(num);//商品数量
+            orderItem.setShoppingNum(num);//商品数量
             orderItem.setSum(clothes.getPrice()*num);//每个订单的金额
-            sum +=orderItem.getSum();       //总金额
-            orderItem.setItemId(count++);   //订单ID
+            sum += orderItem.getSum();       //计算总金额
+
+            //把总金额加到order中去
+            order.setSum(sum);
+
+
+            orderItem.setItemId(count++);   //不同类型商品的条目（例如，1、连衣裙...，2、T恤...3、羽绒服）
             order.getOrderItemList().add(orderItem);//添加到订单列表
 
             println(getString("product.buy.continue"));
@@ -105,6 +112,7 @@ public class HomeClass extends BaseClass {
                     flag = true;
                     break;
                 case "2":
+
                     flag = false;
                     break;
                 default:
@@ -115,7 +123,8 @@ public class HomeClass extends BaseClass {
             order.setCreateDate(DateUtils.toDate(new Date()));
             order.setUserId(currUser.getId());
             order.getSum(sum);
-            order.setUserId(orderService.list().size()+1);
+            order.setOrderId(orderService.list().size()+1);
+
 
             orderService.buyProduct(order);
             clothesService.update();//更新一下数据
@@ -155,7 +164,7 @@ public class HomeClass extends BaseClass {
                     .appendColum(item.getClothes().getColor())
                     .appendColum(item.getClothes().getPrice())
                     .appendColum(item.getClothes().getDescription())
-                    .appendColum(item.getShooppingNum())
+                    .appendColum(item.getShoppingNum())
                     .appendColum(item.getSum());
         }
         println(t.toString());

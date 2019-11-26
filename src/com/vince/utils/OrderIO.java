@@ -38,8 +38,7 @@ public class OrderIO {
     public boolean writeOrders(){
         try{
             ObjectOutputStream out = new ObjectOutputStream(
-               new FileOutputStream(ORDER_FILE)
-            );
+               new FileOutputStream(ORDER_FILE));
             out.writeObject(orders);
             out.close();
             return true;

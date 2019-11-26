@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class Clothes implements Serializable{
 
-    private String id;//商品编号
-    private String brand;//品牌
+    private String id;    //商品编号
+    private String brand; //品牌
     private  String style;//款式
     private  String color;//颜色
     private  String size; //尺寸

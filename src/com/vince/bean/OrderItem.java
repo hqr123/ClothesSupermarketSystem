@@ -1,15 +1,17 @@
 package com.vince.bean;
 
-public class OrderItem {
-    private int itemId;
+import java.io.Serializable;
+
+public class OrderItem implements Serializable{
+    private int itemId;     //购买了几种类型的商品，itemId是编号。
     private Clothes clothes;//商品
-    private int shooppingNum; //购买数量
+    private int shoppingNum; //购买数量
     private float sum; //购买金额
 
-    public OrderItem(int itemId, Clothes clothes, int shooppingNum, float sum) {
+    public OrderItem(int itemId, Clothes clothes, int shoppingNum, float sum) {
         this.itemId = itemId;
         this.clothes = clothes;
-        this.shooppingNum = shooppingNum;
+        this.shoppingNum = shoppingNum;
         this.sum = sum;
     }
 
@@ -32,12 +34,12 @@ public class OrderItem {
         this.clothes = clothes;
     }
 
-    public int getShooppingNum() {
-        return shooppingNum;
+    public int getShoppingNum() {
+        return shoppingNum;
     }
 
-    public void setShooppingNum(int shooppingNum) {
-        this.shooppingNum = shooppingNum;
+    public void setShoppingNum(int shoppingNum) {
+        this.shoppingNum = shoppingNum;
     }
 
     public float getSum() {
@@ -47,4 +49,6 @@ public class OrderItem {
     public void setSum(float sum) {
         this.sum = sum;
     }
+
+
 }

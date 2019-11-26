@@ -1,125 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?>
-<list>
-    <clothes id = "A0001">
-        <brand>VEROMODA</brand>
-        <style>连衣裙</style>
-        <color>白色</color>
-        <size>S</size>
-        <num>4</num>
-        <price>274.0</price>
-        <description>夏季5分连衣裙</description>
-
-    </clothes>
-    <clothes id = "A0002">
-        <brand>VEROMODA</brand>
-        <style>连衣裙</style>
-        <color>黑色</color>
-        <size>S</size>
-        <num>4</num>
-        <price>274.0</price>
-        <description>夏季5分连衣裙</description>
-
-    </clothes>
-    <clothes id = "A0003">
-        <brand>VEROMODA</brand>
-        <style>连衣裙</style>
-        <color>黑白色</color>
-        <size>S</size>
-        <num>4</num>
-        <price>274.0</price>
-        <description>夏季5分连衣裙</description>
-
-    </clothes>
-    <clothes id = "A0004">
-        <brand>VEROMODA</brand>
-        <style>连衣裙</style>
-        <color>白色</color>
-        <size>S</size>
-        <num>4</num>
-        <price>274.0</price>
-        <description>夏季5分连衣裙</description>
-
-    </clothes>
-    <clothes id = "A0006">
-        <brand>VEROMODA</brand>
-        <style>连衣裙</style>
-        <color>白色</color>
-        <size>S</size>
-        <num>4</num>
-        <price>274.0</price>
-        <description>夏季5分连衣裙</description>
-
-    </clothes>
-    <clothes id = "A0007">
-        <brand>伊莲娜</brand>
-        <style>中短袖连衣裙</style>
-        <color>红色</color>
-        <size>均码</size>
-        <num>6</num>
-        <price>398.0</price>
-        <description>印花真丝夏季连衣裙</description>
-
-    </clothes>
-    <clothes id = "A0008">
-        <brand>VEROMODA</brand>
-        <style>连衣裙</style>
-        <color>白色</color>
-        <size>S</size>
-        <num>4</num>
-        <price>274.0</price>
-        <description>夏季5分连衣裙</description>
-
-    </clothes>
-    <clothes id = "A0009">
-        <brand>艳遇</brand>
-        <style>连衣裙</style>
-        <color>浅蓝色</color>
-        <size>均码</size>
-        <num>40</num>
-        <price>444.0</price>
-        <description>夏季窒息蕾丝女装</description>
-
-    </clothes>
-    <clothes id = "A0010">
-        <brand>法曼丽</brand>
-        <style>连衣裙</style>
-        <color>粉红色</color>
-        <size>M</size>
-        <num>20</num>
-        <price>688.0</price>
-        <description>淑女气质中长大摆裙</description>
-
-    </clothes>
-    <clothes id = "A0011">
-        <brand>VEROMODA</brand>
-        <style>连衣裙</style>
-        <color>白色</color>
-        <size>S</size>
-        <num>4</num>
-        <price>274.0</price>
-        <description>夏季5分连衣裙</description>
-
-    </clothes>
-    <clothes id = "A0012">
-        <brand>VEROMODA</brand>
-        <style>连衣裙</style>
-        <color>白色</color>
-        <size>S</size>
-        <num>4</num>
-        <price>200.0</price>
-        <description>夏季5分连衣裙</description>
-
-    </clothes>
-    <clothes id = "A0013">
-        <brand>VEROMODA</brand>
-        <style>连衣裙</style>
-        <color>白色</color>
-        <size>S</size>
-        <num>4</num>
-        <price>274.0</price>
-        <description>夏季5分连衣裙</description>
-
-    </clothes>
-
-
+<?xml version="1.0" encoding="utf-8"?><list>
+  <clothes id="A0001">
+    <brand>VEROMODA</brand>
+    <style>连衣裙</style>
+    <color>白色</color>
+    <size>S</size>
+    <num>3</num>
+    <price>274.0</price>
+    <description>夏季5分连衣裙</description>
+  </clothes>
+  <clothes id="A0002">
+    <brand>VEROMODA</brand>
+    <style>连衣裙</style>
+    <color>黑色</color>
+    <size>S</size>
+    <num>3</num>
+    <price>274.0</price>
+    <description>夏季5分连衣裙</description>
+  </clothes>
+  <clothes id="A0003">
+    <brand>VEROMODA</brand>
+    <style>连衣裙</style>
+    <color>黑白色</color>
+    <size>S</size>
+    <num>3</num>
+    <price>274.0</price>
+    <description>夏季5分连衣裙</description>
+  </clothes>
+  <clothes id="A0004">
+    <brand>VEROMODA</brand>
+    <style>连衣裙</style>
+    <color>白色</color>
+    <size>S</size>
+    <num>4</num>
+    <price>274.0</price>
+    <description>夏季5分连衣裙</description>
+  </clothes>
+  <clothes id="A0006">
+    <brand>VEROMODA</brand>
+    <style>连衣裙</style>
+    <color>白色</color>
+    <size>S</size>
+    <num>4</num>
+    <price>274.0</price>
+    <description>夏季5分连衣裙</description>
+  </clothes>
+  <clothes id="A0007">
+    <brand>伊莲娜</brand>
+    <style>中短袖连衣裙</style>
+    <color>红色</color>
+    <size>均码</size>
+    <num>6</num>
+    <price>398.0</price>
+    <description>印花真丝夏季连衣裙</description>
+  </clothes>
+  <clothes id="A0008">
+    <brand>VEROMODA</brand>
+    <style>连衣裙</style>
+    <color>白色</color>
+    <size>S</size>
+    <num>3</num>
+    <price>274.0</price>
+    <description>夏季5分连衣裙</description>
+  </clothes>
+  <clothes id="A0009">
+    <brand>艳遇</brand>
+    <style>连衣裙</style>
+    <color>浅蓝色</color>
+    <size>均码</size>
+    <num>30</num>
+    <price>444.0</price>
+    <description>夏季窒息蕾丝女装</description>
+  </clothes>
+  <clothes id="A0010">
+    <brand>法曼丽</brand>
+    <style>连衣裙</style>
+    <color>粉红色</color>
+    <size>M</size>
+    <num>13</num>
+    <price>688.0</price>
+    <description>淑女气质中长大摆裙</description>
+  </clothes>
+  <clothes id="A0011">
+    <brand>VEROMODA</brand>
+    <style>连衣裙</style>
+    <color>白色</color>
+    <size>S</size>
+    <num>4</num>
+    <price>274.0</price>
+    <description>夏季5分连衣裙</description>
+  </clothes>
+  <clothes id="A0012">
+    <brand>VEROMODA</brand>
+    <style>连衣裙</style>
+    <color>白色</color>
+    <size>S</size>
+    <num>3</num>
+    <price>200.0</price>
+    <description>夏季5分连衣裙</description>
+  </clothes>
+  <clothes id="A0013">
+    <brand>VEROMODA</brand>
+    <style>连衣裙</style>
+    <color>白色</color>
+    <size>S</size>
+    <num>2</num>
+    <price>274.0</price>
+    <description>夏季5分连衣裙</description>
+  </clothes>
 </list>
