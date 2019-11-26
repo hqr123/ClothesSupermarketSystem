@@ -40,7 +40,7 @@ public class HomeClass extends BaseClass {
                     findOrderById();
                     flag = false;
                     break;
-                case "3"://购买
+                case "3"://3、购买
                     try {
                         byProducts();
                         flag = false;
@@ -49,10 +49,10 @@ public class HomeClass extends BaseClass {
                         println(e.getMessage());
                     }
                     break;
-                case "4":
+                case "4":  //4、显示商品
                     show();
                     break;
-                case "0":
+                case "0":  //0、退出
                     flag = false;
                     println(getString("info.exit"));
                     System.exit(0);

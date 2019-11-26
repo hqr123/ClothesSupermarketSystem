@@ -6,6 +6,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+//对文件进行操作
 public class OrderIO {
 
     private static List<Order> orders = new ArrayList<>();
@@ -13,6 +14,7 @@ public class OrderIO {
 
     public void add(Order order) throws BusinessException{
                 orders.add(order);
+                writeOrders();
     }
 
     public List<Order> list() throws BusinessException{

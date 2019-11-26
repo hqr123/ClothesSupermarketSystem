@@ -10,6 +10,7 @@ import java.util.List;
 
 public class ProductsXMLUtils {
 
+    //解析XML文件
     public static List<Clothes> parserProductFormXml(){
 
         List<Clothes> products = new ArrayList<>();
@@ -20,7 +21,8 @@ public class ProductsXMLUtils {
 
 
         try {
-            BufferedInputStream inputStream = new BufferedInputStream(new FileInputStream("products.xml"));
+            BufferedInputStream inputStream = new BufferedInputStream(
+                    new FileInputStream("products.xml"));
             products = (List<Clothes>) xStream.fromXML(inputStream);
             inputStream.close();
         } catch (IOException e) {
@@ -39,7 +41,10 @@ public class ProductsXMLUtils {
         xStream.useAttributeFor(Clothes.class,"id");
 
         try{
-            BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream("products.xml"));
+            BufferedOutputStream outputStream = new BufferedOutputStream(
+                    new FileOutputStream("products.xml"));
+
+            //单独把头写进去
             outputStream.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>".getBytes());
             xStream.toXML(products,outputStream);
             outputStream.close();
