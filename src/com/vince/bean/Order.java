@@ -38,8 +38,8 @@ public class Order implements Serializable {
         this.createDate = createDate;
     }
 
-    public float getSum() {
-        return sum;
+    public float getSum(float sum) {
+        return this.sum;
     }
 
     public void setSum(float sum) {
