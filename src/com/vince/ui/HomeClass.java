@@ -110,7 +110,7 @@ public class HomeClass extends BaseClass {
 
             orderService.buyProduct(order);
             clothesService.update();//更新一下数据
-            showProduct();//重新显示数据
+            show();//重新显示数据
 
 
     }
